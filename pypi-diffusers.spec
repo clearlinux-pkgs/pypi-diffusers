@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-diffusers
-Version  : 0.16.1
-Release  : 9
-URL      : https://files.pythonhosted.org/packages/d6/83/9581eb18ea868528cf3ba001bf456e586fb7846368e1df695ea809db74ac/diffusers-0.16.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/d6/83/9581eb18ea868528cf3ba001bf456e586fb7846368e1df695ea809db74ac/diffusers-0.16.1.tar.gz
+Version  : 0.17.0
+Release  : 10
+URL      : https://files.pythonhosted.org/packages/6d/93/f611fd7966f8cbad13ede933b77e836948c0da11a9b061aa78fadd51e4ca/diffusers-0.17.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/6d/93/f611fd7966f8cbad13ede933b77e836948c0da11a9b061aa78fadd51e4ca/diffusers-0.17.0.tar.gz
 Summary  : Diffusers
 Group    : Development/Tools
 License  : Apache-2.0
@@ -23,7 +23,7 @@ BuildRequires : buildreq-distutils3
 %description
 <p align="center">
 <br>
-<img src="./docs/source/en/imgs/diffusers_library.jpg" width="400"/>
+<img src="https://github.com/huggingface/diffusers/blob/main/docs/source/en/imgs/diffusers_library.jpg" width="400"/>
 <br>
 <p>
 <p align="center">
@@ -82,10 +82,10 @@ python3 components for the pypi-diffusers package.
 
 
 %prep
-%setup -q -n diffusers-0.16.1
-cd %{_builddir}/diffusers-0.16.1
+%setup -q -n diffusers-0.17.0
+cd %{_builddir}/diffusers-0.17.0
 pushd ..
-cp -a diffusers-0.16.1 buildavx2
+cp -a diffusers-0.17.0 buildavx2
 popd
 
 %build
@@ -93,7 +93,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682972615
+export SOURCE_DATE_EPOCH=1686326430
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
