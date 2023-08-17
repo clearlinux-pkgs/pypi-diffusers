@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-diffusers
-Version  : 0.19.3
-Release  : 17
-URL      : https://files.pythonhosted.org/packages/88/45/65721d67b35531029810aa7c9f3114104548259ecce208ad88269caa81c6/diffusers-0.19.3.tar.gz
-Source0  : https://files.pythonhosted.org/packages/88/45/65721d67b35531029810aa7c9f3114104548259ecce208ad88269caa81c6/diffusers-0.19.3.tar.gz
+Version  : 0.20.0
+Release  : 18
+URL      : https://files.pythonhosted.org/packages/c8/3a/87437afd4c0d4be84b9f5dbbd6b61e1cd31a91d95efa3ee521dbd631dcd2/diffusers-0.20.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/c8/3a/87437afd4c0d4be84b9f5dbbd6b61e1cd31a91d95efa3ee521dbd631dcd2/diffusers-0.20.0.tar.gz
 Summary  : Diffusers
 Group    : Development/Tools
 License  : Apache-2.0
@@ -21,7 +21,22 @@ BuildRequires : buildreq-distutils3
 %define debug_package %{nil}
 
 %description
+<p align="center">
 <br>
+<img src="https://raw.githubusercontent.com/huggingface/diffusers/main/docs/source/en/imgs/diffusers_library.jpg" width="400"/>
+<br>
+<p>
+<p align="center">
+<a href="https://github.com/huggingface/diffusers/blob/main/LICENSE">
+<img alt="GitHub" src="https://img.shields.io/github/license/huggingface/datasets.svg?color=blue">
+</a>
+<a href="https://github.com/huggingface/diffusers/releases">
+<img alt="GitHub release" src="https://img.shields.io/github/release/huggingface/diffusers.svg">
+</a>
+<a href="CODE_OF_CONDUCT.md">
+<img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg">
+</a>
+</p>
 
 %package bin
 Summary: bin components for the pypi-diffusers package.
@@ -68,10 +83,10 @@ python3 components for the pypi-diffusers package.
 
 
 %prep
-%setup -q -n diffusers-0.19.3
-cd %{_builddir}/diffusers-0.19.3
+%setup -q -n diffusers-0.20.0
+cd %{_builddir}/diffusers-0.20.0
 pushd ..
-cp -a diffusers-0.19.3 buildavx2
+cp -a diffusers-0.20.0 buildavx2
 popd
 
 %build
@@ -79,7 +94,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1690816363
+export SOURCE_DATE_EPOCH=1692283656
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
