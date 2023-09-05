@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-diffusers
-Version  : 0.20.1
-Release  : 19
-URL      : https://files.pythonhosted.org/packages/75/99/9677eaaa379620e17769d31c81f9fe2f15788f69bf19aefb1f71d873add2/diffusers-0.20.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/75/99/9677eaaa379620e17769d31c81f9fe2f15788f69bf19aefb1f71d873add2/diffusers-0.20.1.tar.gz
+Version  : 0.20.2
+Release  : 20
+URL      : https://files.pythonhosted.org/packages/dc/00/db9889e23aab84b3f58fec81e09576bf7de92c6c985138990b4b95ee136c/diffusers-0.20.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/dc/00/db9889e23aab84b3f58fec81e09576bf7de92c6c985138990b4b95ee136c/diffusers-0.20.2.tar.gz
 Summary  : Diffusers
 Group    : Development/Tools
 License  : Apache-2.0
@@ -83,10 +83,10 @@ python3 components for the pypi-diffusers package.
 
 
 %prep
-%setup -q -n diffusers-0.20.1
-cd %{_builddir}/diffusers-0.20.1
+%setup -q -n diffusers-0.20.2
+cd %{_builddir}/diffusers-0.20.2
 pushd ..
-cp -a diffusers-0.20.1 buildavx2
+cp -a diffusers-0.20.2 buildavx2
 popd
 
 %build
@@ -94,7 +94,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1693251015
+export SOURCE_DATE_EPOCH=1693930567
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
