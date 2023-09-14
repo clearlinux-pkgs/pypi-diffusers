@@ -4,11 +4,11 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-diffusers
-Version  : 0.20.2
-Release  : 20
-URL      : https://files.pythonhosted.org/packages/dc/00/db9889e23aab84b3f58fec81e09576bf7de92c6c985138990b4b95ee136c/diffusers-0.20.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/dc/00/db9889e23aab84b3f58fec81e09576bf7de92c6c985138990b4b95ee136c/diffusers-0.20.2.tar.gz
-Summary  : Diffusers
+Version  : 0.21.1
+Release  : 21
+URL      : https://files.pythonhosted.org/packages/e8/88/a9eb0e01232a817f35d5c91f44caf438107d7c6efd39d16df794e5eacf2c/diffusers-0.21.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/e8/88/a9eb0e01232a817f35d5c91f44caf438107d7c6efd39d16df794e5eacf2c/diffusers-0.21.1.tar.gz
+Summary  : State-of-the-art diffusion in PyTorch and JAX.
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: pypi-diffusers-bin = %{version}-%{release}
@@ -32,6 +32,9 @@ BuildRequires : buildreq-distutils3
 </a>
 <a href="https://github.com/huggingface/diffusers/releases">
 <img alt="GitHub release" src="https://img.shields.io/github/release/huggingface/diffusers.svg">
+</a>
+<a href="https://pepy.tech/project/diffusers">
+<img alt="GitHub release" src="https://static.pepy.tech/badge/diffusers/month">
 </a>
 <a href="CODE_OF_CONDUCT.md">
 <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg">
@@ -83,10 +86,10 @@ python3 components for the pypi-diffusers package.
 
 
 %prep
-%setup -q -n diffusers-0.20.2
-cd %{_builddir}/diffusers-0.20.2
+%setup -q -n diffusers-0.21.1
+cd %{_builddir}/diffusers-0.21.1
 pushd ..
-cp -a diffusers-0.20.2 buildavx2
+cp -a diffusers-0.21.1 buildavx2
 popd
 
 %build
@@ -94,7 +97,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1693930567
+export SOURCE_DATE_EPOCH=1694706401
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
