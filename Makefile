@@ -1,5 +1,5 @@
 PKG_NAME := pypi-diffusers
-URL = https://files.pythonhosted.org/packages/ec/6f/37aaeff725b49ee818891f6cc8cde03174bc2fb1e045a0a020ad564efa4e/diffusers-0.21.3.tar.gz
+URL = https://files.pythonhosted.org/packages/f3/a2/bb69b0d51d60003d3b974a685cb29057f67128de1606cef47fdf938e9c13/diffusers-0.21.4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
