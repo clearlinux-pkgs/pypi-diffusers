@@ -6,10 +6,10 @@
 # autospec commit: e661f3a
 #
 Name     : pypi-diffusers
-Version  : 0.23.1
-Release  : 31
-URL      : https://files.pythonhosted.org/packages/ef/a8/d247ea603f14e0b2b0db581121f9a4e504dfa3066e353a0ed0ee486a78fe/diffusers-0.23.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/ef/a8/d247ea603f14e0b2b0db581121f9a4e504dfa3066e353a0ed0ee486a78fe/diffusers-0.23.1.tar.gz
+Version  : 0.24.0
+Release  : 32
+URL      : https://files.pythonhosted.org/packages/d7/e0/4419f79ecc9c8006daad1969780b8e860e083c614611bced43dc1ec72fa4/diffusers-0.24.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/d7/e0/4419f79ecc9c8006daad1969780b8e860e083c614611bced43dc1ec72fa4/diffusers-0.24.0.tar.gz
 Summary  : State-of-the-art diffusion in PyTorch and JAX.
 Group    : Development/Tools
 License  : Apache-2.0
@@ -23,25 +23,10 @@ BuildRequires : buildreq-distutils3
 %define debug_package %{nil}
 
 %description
-<p align="center">
-<br>
-<img src="https://raw.githubusercontent.com/huggingface/diffusers/main/docs/source/en/imgs/diffusers_library.jpg" width="400"/>
-<br>
-<p>
-<p align="center">
-<a href="https://github.com/huggingface/diffusers/blob/main/LICENSE">
-<img alt="GitHub" src="https://img.shields.io/github/license/huggingface/datasets.svg?color=blue">
-</a>
-<a href="https://github.com/huggingface/diffusers/releases">
-<img alt="GitHub release" src="https://img.shields.io/github/release/huggingface/diffusers.svg">
-</a>
-<a href="https://pepy.tech/project/diffusers">
-<img alt="GitHub release" src="https://static.pepy.tech/badge/diffusers/month">
-</a>
-<a href="CODE_OF_CONDUCT.md">
-<img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg">
-</a>
-</p>
+<!---
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
 %package bin
 Summary: bin components for the pypi-diffusers package.
@@ -88,10 +73,10 @@ python3 components for the pypi-diffusers package.
 
 
 %prep
-%setup -q -n diffusers-0.23.1
-cd %{_builddir}/diffusers-0.23.1
+%setup -q -n diffusers-0.24.0
+cd %{_builddir}/diffusers-0.24.0
 pushd ..
-cp -a diffusers-0.23.1 buildavx2
+cp -a diffusers-0.24.0 buildavx2
 popd
 
 %build
@@ -99,7 +84,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1700171339
+export SOURCE_DATE_EPOCH=1701340714
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
