@@ -7,7 +7,7 @@
 #
 Name     : pypi-diffusers
 Version  : 0.31.0
-Release  : 59
+Release  : 60
 URL      : https://files.pythonhosted.org/packages/78/5d/156acb741303abbee214926804c5f0d09eacd35d05ad942577e996acdac3/diffusers-0.31.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/78/5d/156acb741303abbee214926804c5f0d09eacd35d05ad942577e996acdac3/diffusers-0.31.0.tar.gz
 Summary  : State-of-the-art diffusion in PyTorch and JAX.
