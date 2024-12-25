@@ -6,10 +6,10 @@
 # autospec commit: 5424026
 #
 Name     : pypi-diffusers
-Version  : 0.32.0
-Release  : 61
-URL      : https://files.pythonhosted.org/packages/12/fa/48b5be99873a1e5916663c0baab408cb5b74b0a060854e5ff06b54b7630c/diffusers-0.32.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/12/fa/48b5be99873a1e5916663c0baab408cb5b74b0a060854e5ff06b54b7630c/diffusers-0.32.0.tar.gz
+Version  : 0.32.1
+Release  : 62
+URL      : https://files.pythonhosted.org/packages/bb/b3/c43ace020b7475df034eb1ef4c544f51ee40b71ea87f87f9992821b06a95/diffusers-0.32.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/bb/b3/c43ace020b7475df034eb1ef4c544f51ee40b71ea87f87f9992821b06a95/diffusers-0.32.1.tar.gz
 Summary  : State-of-the-art diffusion in PyTorch and JAX.
 Group    : Development/Tools
 License  : Apache-2.0
@@ -73,10 +73,10 @@ python3 components for the pypi-diffusers package.
 
 
 %prep
-%setup -q -n diffusers-0.32.0
-cd %{_builddir}/diffusers-0.32.0
+%setup -q -n diffusers-0.32.1
+cd %{_builddir}/diffusers-0.32.1
 pushd ..
-cp -a diffusers-0.32.0 buildavx2
+cp -a diffusers-0.32.1 buildavx2
 popd
 
 %build
@@ -84,7 +84,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1735095270
+export SOURCE_DATE_EPOCH=1735144939
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
